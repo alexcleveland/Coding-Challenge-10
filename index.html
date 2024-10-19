@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2 id="product-name">Generic White T-Shirt</h2>
+    <p id="product-price">Small: $30.00</p>
+    <p id="product-price">Medium: $40.00</p>
+    <p id="product-price">large: $50.00</p>
+    <p id="product-price">Extra Large: $60.00</p>
+
+
+
+
+    <label for="size-selector">Select Size:</label>
+    <select id="size-selector">
+        <option value="small" data-price="30" data-stock="in-stock">Small: In Stock</option>
+        <option value="medium"data-price="40" data-stock="in-stock">Medium: In Stock</option>
+        <option value="large"data-price="50" data-stock="in-stock">Large: In Stock</option>
+        <option value="extra large"data-price="60" data-stock="out-of-stock">Extra-Large: Out of Stock</option>
+    </select>
+
+    <button id="purchase-button">Purchase</button>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
