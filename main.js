@@ -16,3 +16,14 @@ document.addEventListener(`DOMContentLoaded`,() => {
         }
     });
 });
+
+purchaseButton.addEventListener(`click`, () => {
+    const selectedOption = sizeSelector.options[sizeSelector.selectedIndex];
+    const stockStatus = selectedOption.getattribute(`data-stock`);
+    if (stockStatus === `in-stock`) {
+        alert(`Thank you for shopping with us!!!`);
+    } else {
+        alert(`Sorry for the inconvinece this is out of stock :(`);
+    }
+    
+});
