@@ -4,19 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product page</title>
-    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <h2 id="product-name">Generic White T-Shirt</h2>
-    <p id="product-price">Small: $30.00</p>
-    <p id="product-price">Medium: $40.00</p>
-    <p id="product-price">large: $50.00</p>
-    <p id="product-price">Extra Large: $60.00</p>
+    <p id="product-price">Price: $<span id="current-price">30.00</span></p>
 
-
-
-
-    <label for="size-selector">Select Size:</label>
+<label for="size-selector">Select Size:</label>
     <select id="size-selector">
         <option value="small" data-price="30" data-stock="in-stock">Small: In Stock</option>
         <option value="medium"data-price="40" data-stock="in-stock">Medium: In Stock</option>
@@ -25,6 +19,18 @@
     </select>
 
     <button id="purchase-button">Purchase</button>
+
+    <hr>
+
+    <h3>Add New Product</h3>
+    <form id="add-product-form">
+        <input type="text" id="new-product-name" placeholder="Product Name" required>
+        <input type="text" id="new-product-price" placeholder="Price" required>
+        <input type="text" id="new-product-size" placeholder="Size" required>
+        <input type="text" id="new-product-stock" placeholder="In Stock/ Out of Stock" required>
+        <button type="submit">Add Product</button>
+    </form>
+    <div id="product-list"></div>
 
     <script src="main.js"></script>
     
